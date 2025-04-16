@@ -30,7 +30,7 @@ export default function CreateSnippetPage() {
             type="text"
             id="title"
             placeholder="Enter your snippet title"
-            className="rounded-xl border border-zinc-300 dark:border-zinc-700 focus:ring-2 focus:ring-indigo-500"
+            className="rounded-xl border border-zinc-300 dark:border-zinc-700 focus:ring-2 focus:ring-indigo-500 break-words"
           />
         </div>
 
@@ -45,7 +45,7 @@ export default function CreateSnippetPage() {
             name="code"
             id="code"
             placeholder="Paste your code here..."
-            className="min-h-[200px] rounded-xl border border-zinc-300 dark:border-zinc-700 focus:ring-2 focus:ring-indigo-500"
+            className="min-h-[200px] rounded-xl border border-zinc-300 dark:border-zinc-700 focus:ring-2 focus:ring-indigo-500 whitespace-pre-wrap break-words"
           />
         </div>
         {formStateData.message && (
